@@ -602,3 +602,93 @@ body {
 		width: 100%;
 	}
 }
+
+/* ===== CLASSES DA PAGINA CONTATO ===== */
+
+.contact-page {
+	padding-bottom: 3rem;
+}
+
+.contact-title {
+	margin: 0.25rem 0 0.75rem;
+	font-size: clamp(1.55rem, 3vw, 2.4rem);
+	line-height: 1.1;
+}
+
+.contact-subtitle {
+	color: #c4e8d4;
+	max-width: 48ch;
+	line-height: 1.65;
+}
+
+.contact-info-block {
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+}
+
+.contact-info-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	color: #d0f0e0;
+	font-size: 0.97rem;
+}
+
+.contact-info-item svg {
+	width: 1.2rem;
+	height: 1.2rem;
+	flex-shrink: 0;
+	fill: none;
+	stroke: #7bd59f;
+	stroke-width: 1.8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.contact-form {
+	background: linear-gradient(155deg, rgba(14, 47, 29, 0.85), rgba(8, 31, 18, 0.9));
+	border: 1px solid rgba(182, 229, 200, 0.2);
+	border-radius: 1rem;
+	padding: 2rem 1.75rem;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+}
+
+.contact-form .form-label {
+	color: #d0efdf;
+	font-size: 0.92rem;
+	font-weight: 600;
+	margin-bottom: 0.4rem;
+}
+
+.contact-input,
+.contact-input:focus {
+	background-color: rgba(6, 24, 13, 0.7);
+	border-color: rgba(182, 229, 200, 0.28);
+	color: #e8f7ee;
+	border-radius: 0.6rem;
+	padding: 0.65rem 0.9rem;
+}
+
+.contact-input:focus {
+	background-color: rgba(6, 24, 13, 0.88);
+	border-color: rgba(123, 213, 159, 0.7);
+	box-shadow: 0 0 0 3px rgba(123, 213, 159, 0.15);
+	color: #e8f7ee;
+}
+
+.contact-input::placeholder {
+	color: rgba(195, 226, 208, 0.45);
+}
+
+.contact-input option {
+	background-color: #0b2516;
+	color: #e8f7ee;
+}
+
+.contact-submit {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	font-size: 1rem;
+	border-radius: 0.75rem;
+}
