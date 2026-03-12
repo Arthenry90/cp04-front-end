@@ -207,6 +207,7 @@ body {
 	object-fit: cover;
 	z-index: 0;
 	filter: saturate(0.6) brightness(0.45);
+	pointer-events: none;
 }
 
 .promo-slide::before {
@@ -299,6 +300,7 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
 	width: 3%;
+	z-index: 10;
 }
 
 .carousel-control-prev-icon,
