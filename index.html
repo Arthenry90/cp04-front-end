@@ -1,14 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EcoMarket | Tech T-Shirts Sustentaveis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
 
 </head>
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> <span class="fs-4">Simple header</span> </a> <ul class="nav nav-pills"> <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> <li class="nav-item"><a href="#" class="nav-link">Features</a></li> <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li> <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> <li class="nav-item"><a href="#" class="nav-link">About</a></li> </ul> </header>
-    
+    <header class="site-header">
+        <nav class="site-nav container" aria-label="Navegacao principal">
+            <a href="index.html" class="brand" aria-label="Pagina inicial EcoMarket">
+                <span class="brand-mark" aria-hidden="true">EM</span>
+                <span class="brand-text">EcoMarket</span>
+            </a>
+
+            <ul class="menu-links">
+                <li><a href="index.html" class="menu-link active" aria-current="page">Inicio</a></li>
+                <li><a href="pages/products.html" class="menu-link">Produtos</a></li>
+                <li><a href="#" class="menu-link">Sobre</a></li>
+                <li><a href="#" class="menu-link">Contato</a></li>
+            </ul>
+
+            <a href="#" class="cart-button" aria-label="Carrinho">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 4h2l2.4 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H7"></path>
+                    <circle cx="10" cy="20" r="1.6"></circle>
+                    <circle cx="17" cy="20" r="1.6"></circle>
+                </svg>
+                <span class="cart-count">2</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container hero-wrap" aria-label="Promocoes em destaque">
+            <div id="promoCarousel" class="carousel slide promo-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded-4 overflow-hidden">
+                    <div class="carousel-item active">
+                        <article class="promo-slide slide-1">
+                            <span class="slide-tag">LANCAMENTO</span>
+                            <h1>Tech T-Shirts que respiram com voce</h1>
+                            <p>Tecido inteligente, secagem rapida e toque premium para quem vive em movimento.</p>
+                            <a class="btn btn-eco" href="pages/products.html">Ver colecao</a>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="promo-slide slide-2">
+                            <span class="slide-tag">SUSTENTAVEL</span>
+                            <h2>Menos impacto, mais performance</h2>
+                            <p>Fios reciclados e producao consciente para reduzir agua, energia e desperdicio.</p>
+                            <a class="btn btn-eco" href="pages/products.html">Comprar agora</a>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="promo-slide slide-3">
+                            <span class="slide-tag">PROMO DA SEMANA</span>
+                            <h2>Leve 3, pague 2 em cores essenciais</h2>
+                            <p>Monte seu kit com camisetas preto, chumbo e verde oliva com frete reduzido.</p>
+                            <a class="btn btn-eco" href="pages/products.html">Montar kit</a>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container products-area" aria-label="Categorias de produtos">
+            <div class="section-head">
+                <p class="kicker">Categorias</p>
+                <h2>Tech T-Shirts por estilo</h2>
+            </div>
+
+            <div class="category-block">
+                <h3>Performance</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Best seller</span>
+                                <h4 class="card-title mt-3">Motion Dry Tee</h4>
+                                <p class="card-text">Ultraleve, antiodor e secagem rapida para treino e rotina intensa.</p>
+                                <p class="price">R$ 149,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Novo</span>
+                                <h4 class="card-title mt-3">AirFlow Tech</h4>
+                                <p class="card-text">Painel respiravel e elasticidade inteligente com toque macio.</p>
+                                <p class="price">R$ 169,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Eco fibra</span>
+                                <h4 class="card-title mt-3">Core Active</h4>
+                                <p class="card-text">Malha reciclada com controle termico para uso o dia todo.</p>
+                                <p class="price">R$ 159,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-block">
+                <h3>Casual Premium</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Conforto 24h</span>
+                                <h4 class="card-title mt-3">Urban Minimal Tee</h4>
+                                <p class="card-text">Corte limpo e tecido tecnico com visual sofisticado e discreto.</p>
+                                <p class="price">R$ 139,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Sem passar</span>
+                                <h4 class="card-title mt-3">No-Iron Daily</h4>
+                                <p class="card-text">Nao amassa facil e mantem caimento moderno por mais tempo.</p>
+                                <p class="price">R$ 129,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Pack inteligente</span>
+                                <h4 class="card-title mt-3">Kit Essentials 3x</h4>
+                                <p class="card-text">Trio com tons neutros para simplificar o guarda-roupa semanal.</p>
+                                <p class="price">R$ 299,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-block">
+                <h3>Casa e autocuidado</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Care</span>
+                                <h4 class="card-title mt-3">Laundry Guard</h4>
+                                <p class="card-text">Sabao suave para manter respirabilidade e durabilidade das fibras.</p>
+                                <p class="price">R$ 49,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Acessorio</span>
+                                <h4 class="card-title mt-3">Cabide Eco Shape</h4>
+                                <p class="card-text">Preserva o caimento das camisetas sem deformar gola e ombros.</p>
+                                <p class="price">R$ 39,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card product-card h-100">
+                            <div class="card-body">
+                                <span class="badge bg-eco">Beleza</span>
+                                <h4 class="card-title mt-3">Skin Fresh Mist</h4>
+                                <p class="card-text">Bruma refrescante pos treino para combinar com rotina ativa.</p>
+                                <p class="price">R$ 59,90</p>
+                                <a href="#" class="btn btn-outline-eco w-100">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
